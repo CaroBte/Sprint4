@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist FastKart</title>
+    <script src="https://kit.fontawesome.com/ad59ddcea5.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="./styles/styles.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid btn-success d-flex justify-content-between">
+        <p class="p-top"> Something you love is now on sale! <strong><u>Buy now !</u></strong></p>
+        <p class="p-top"> English <i class="fa-solid fa-flag-usa"></i> USD </p>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
+            <a id="logo" class="navbar-brand" href="index.html"><img src="./styles/logo.png" height="24px"></a>
+            <div class="navbar-collapse" id="navbarSupportedContent">
+                <form id="search" class="d-flex" role="search">
+                    <button id="location" class="btn"><i class="fa-solid fa-location-dot"></i>
+                    </button>
+                    <div class="input-group">
+                        <input id="searched" type="text" class="form-control" placeholder="I'm searching for..."
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+                <ul id="navbar1" class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html"><i
+                                class="fa-solid fa-house"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active border-start border-end" aria-current="page" href="#"><i
+                                class="fa-regular fa-heart"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active border-end" aria-current="page" href="./cart.html"><i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./admin.html"><i
+                                class="fa-regular fa-user"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-success"><i class="fa-solid fa-bars-staggered"></i> All
+                        Categories</button>
+                </li>
+                <li class="nav-item">
+                    <select class="form-select" aria-label="Floating label select example">
+                        <option selected>Home</option>
+                    </select>
+                </li>
+                <li class="nav-item">
+                    <select class="form-select" aria-label="Floating label select example">
+                        <option selected>Shop</option>
+                    </select>
+                </li>
+                <li class="nav-item">
+                    <select class="form-select" aria-label="Floating label select example">
+                        <option selected>Product</option>
+                    </select>
+                </li>
+                <li class="nav-item">
+                    <select class="form-select" aria-label="Floating label select example">
+                        <option selected>Mega Menu</option>
+                    </select>
+                </li>
+                <li class="nav-item">
+                    <select class="form-select" aria-label="Floating label select example">
+                        <option selected>Blog</option>
+                    </select>
+                </li>
+                <li class="nav-item">
+                    <select class="form-select" aria-label="Floating label select example">
+                        <option selected>Pages</option>
+                    </select>
+                </li>
+                <li class="nav-item">
+                    <select class="form-select" aria-label="Floating label select example">
+                        <option selected>Contact</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar d-flex flex-row justify-content-around bg-light">
+        <div class="d-flex flex-row">
+            <p class="navbar-brand">Wishlist <i class="fa-regular fa-heart"></i></p>
+        </div>
+
+    </nav>
+
+    <div id="cardsFav" class="d-flex flex-wrap">
+    </div>
+
+    <script src="./api.js"></script>
+    <script defer src="./main.js"></script>
+    <script defer src="./fav.js"></script>
+
+</body>
+
+</html>

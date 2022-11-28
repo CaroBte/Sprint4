@@ -1,0 +1,83 @@
+{
+  "producto": [
+    {
+      "id": 1,
+      "nombre": "Choco Chip Cookies",
+      "precio": 24,
+      "imagen": "https://www.karachibakery.com/images/biscuits/big/oatmeal-atta-biscuit.jpg",
+      "categoria": "Cookies",
+      "contenido": "225gr",
+      "cantidad": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Peanut Butter Cookies",
+      "precio": 27,
+      "imagen": "https://m.media-amazon.com/images/I/61YcX9j6XFS._SX425_.jpg",
+      "categoria": "Cookies",
+      "contenido": "225gr",
+      "cantidad": 1
+    },
+    {
+      "id": 3,
+      "nombre": "Yumitos Potato Chips",
+      "precio": 28,
+      "imagen": "https://elements-preview-images-0.imgix.net/69248b6e-d520-44dc-b5e3-26a8999e3b75?auto=compress%2Cformat&fit=max&w=1370&s=07c1ffe34f053239f4c88991603285e2",
+      "categoria": "Chips",
+      "contenido": "75gr",
+      "cantidad": 1
+    },
+    {
+      "id": 4,
+      "nombre": "Cold Instant Coffee",
+      "precio": 15,
+      "imagen": "https://m.media-amazon.com/images/I/51DHIYRJi6L._SX425_PIbundle-2,TopRight,0,0_AA425SH20_.jpg",
+      "categoria": "Drinks",
+      "contenido": "545ml",
+      "cantidad": 1
+    },
+    {
+      "id": 5,
+      "nombre": "SnackAmor JowarChips",
+      "precio": 22,
+      "imagen": "https://lasficheras.com/wp/wp-content/uploads/2014/08/IMG_5058-510x340.jpg",
+      "categoria": "Chips",
+      "contenido": "75gr",
+      "cantidad": 1
+    },
+    {
+      "id": 6,
+      "nombre": "Cold Drink Soda",
+      "precio": 23,
+      "imagen": "http://unblast.com/wp-content/uploads/2021/07/2-Soda-Can-Mockup.jpg",
+      "categoria": "Drinks",
+      "contenido": "355ml",
+      "cantidad": 1
+    }
+  ],
+  "compras": [
+    {
+      "name": "Caro",
+      "adress": "Envigado",
+      "cellphone": "3113506770",
+      "factura": [
+        "Choco Chip Cookies x 2",
+        "Peanut Butter Cookies x 2"
+      ],
+      "total": "$ 102",
+      "id": 1
+    },
+    {
+      "name": "Carlos",
+      "adress": "Castilla",
+      "cellphone": "3128754324",
+      "factura": [
+        "Choco Chip Cookies x 2",
+        "Peanut Butter Cookies x 2",
+        "Yumitos Potato Chips x 2"
+      ],
+      "total": "$ 158",
+      "id": 2
+    }
+  ]
+}

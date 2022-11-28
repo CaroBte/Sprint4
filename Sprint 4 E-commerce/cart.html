@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart FastKart</title>
+    <script src="https://kit.fontawesome.com/ad59ddcea5.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="./styles/styles.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid btn-success d-flex justify-content-between">
+        <p class="p-top"> Something you love is now on sale! <strong><u>Buy now !</u></strong></p>
+        <p class="p-top"> English <i class="fa-solid fa-flag-usa"></i> USD </p>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
+            <a id="logo" class="navbar-brand" href="index.html"><img src="./styles/logo.png" height="24px"></a>
+            <div class="navbar-collapse" id="navbarSupportedContent">
+                <form id="search" class="d-flex" role="search">
+                    <button id="location" class="btn"><i class="fa-solid fa-location-dot"></i>
+                    </button>
+                    <div class="input-group">
+                        <input id="searched" type="text" class="form-control" placeholder="I'm searching for..."
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+                <ul id="navbar1" class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html"><i
+                                class="fa-solid fa-house"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active border-start border-end" aria-current="page"
+                            href="./favoritos.html"><i class="fa-regular fa-heart"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active border-end" aria-current="page" href="#"><i
+                                class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./admin.html"><i
+                                class="fa-regular fa-user"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-success"><i class="fa-solid fa-bars-staggered"></i> All
+                        Categories</button>
+                </li>
+                <li class="nav-item">
+                    <select class="form-select" aria-label="Floating label select example">
+                        <option selected>Home</option>
+                    </select>
+                </li>
+                <li class="nav-item">
+                    <select class="form-select" aria-label="Floating label select example">
+                        <option selected>Shop</option>
+                    </select>
+                </li>
+                <li class="nav-item">
+                    <select class="form-select" aria-label="Floating label select example">
+                        <option selected>Product</option>
+                    </select>
+                </li>
+                <li class="nav-item">
+                    <select class="form-select" aria-label="Floating label select example">
+                        <option selected>Mega Menu</option>
+                    </select>
+                </li>
+                <li class="nav-item">
+                    <select class="form-select" aria-label="Floating label select example">
+                        <option selected>Blog</option>
+                    </select>
+                </li>
+                <li class="nav-item">
+                    <select class="form-select" aria-label="Floating label select example">
+                        <option selected>Pages</option>
+                    </select>
+                </li>
+                <li class="nav-item">
+                    <select class="form-select" aria-label="Floating label select example">
+                        <option selected>Contact</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar d-flex flex-row justify-content-around bg-light">
+        <div class="d-flex flex-row">
+            <p id="cart-nav" class="navbar-brand">Cart <i class="fa-solid fa-cart-shopping"></i></p>
+        </div>
+        <!--         <div>
+            <button class="btn btn-outline-success" onclick="location.reload()">Update your Cart</button>
+        </div> -->
+    </nav>
+
+    <div id="cardsCart" class="d-flex flex-column flex-wrap mb-4">
+        <!-- <div class="cart bg-light d-flex flex-wrap flex-row align-items-center justify-content-around">
+            <div class="img-cart">
+                <img src="https://elements-preview-images-0.imgix.net/69248b6e-d520-44dc-b5e3-26a8999e3b75?auto=compress%2Cformat&fit=max&w=1370&s=07c1ffe34f053239f4c88991603285e2"
+                    style="width:7rem">
+            </div>
+            <div class="flex-wrap text-cart">
+                <p> <strong>Yumitos Chilli Sprinkled Potato Chips</strong> <span class="text-grey">225gr</span></p>
+            </div>
+            <div class="price-cart">
+                <p>Price</p>
+                <p>28.30</p>
+            </div>
+            <div class="quantity-cart input-group">
+                <button class="btn btn-outline-secondary" type="button">+</button>
+                <input type="text" class="form-control" disabled>
+                <button class="btn btn-outline-secondary" type="button">-</button>
+            </div>
+            <div class="total-cart">
+                <p>Total</p>
+                <p>28.30+</p>
+            </div>
+            <div>
+                <p>Action</p>
+                <p class="text-danger" onclick="guardarCart()"> <strong> <u>Remove</u> </strong> </p>
+            </div>
+        </div> -->
+    </div>
+    <section class="cart-total bg-light card p-3 m-auto expand-lg" style="width: 90%; height: auto;">
+        <div class="card-title border-bottom">
+            <h5><strong>Card Total</strong></h5>
+        </div>
+        <div class="coupon">
+            <p class="text-grey">Coupon Apply</p>
+            <div class="input-group mb-3">
+                <input type=" text" class="form-control border border-opacity-50 border-2 border-success"
+                    placeholder="Enter Coupon Coder Here..." aria-describedby="button-addon2">
+                <button class="btn btn-success" type="button">Apply</button>
+            </div>
+        </div>
+        <div id="total-cart" class="d-flex justify-content-between">
+            <h6>Total</h6>
+            <h6 class="text-green" id="total-final"><u></u></h6>
+        </div>
+        <div class="buttons-cart justify-content-center ">
+
+            <button class="btn btn-danger mt-4 mb-4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseExample" aria-expanded="false">
+                Process to Checkout
+            </button>
+
+            <div class="collapse" id="collapseExample">
+                <form action="">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="input-nombre" placeholder="Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="input-adress" placeholder="Adress"
+                            aria-describedby="adress" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" class="form-control" id="input-celular" placeholder="Cellphone" required>
+                    </div>
+                    <div class="d-flex flex-row justify-content-end">
+                        <button type="button" class="btn btn-outline-secondary">Cancel</button>
+                        <button type="button" class="btn btn-danger ml-5" id="buy-now">Buy Now</button>
+                    </div>
+                </form>
+            </div>
+            <a href="#cart-nav"><button class="btn btn-outline-secondary m-2">←Return to shopping</button></a>
+
+        </div>
+
+    </section>
+    <script defer src="./api.js"></script>
+    <script defer src="./main.js"></script>
+    <script defer src="./cart.js"></script>
+
+</body>
+
+</html>

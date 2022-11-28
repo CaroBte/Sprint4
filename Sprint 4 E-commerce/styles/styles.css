@@ -1,0 +1,227 @@
+.p-top {
+    color: whitesmoke;
+    margin-top: 1vw;
+}
+
+body {
+    margin-left: 3%;
+}
+
+#location {
+    margin-right: 1em;
+    height: max-content;
+    color: rgb(174, 173, 173);
+    border: 1px solid;
+}
+
+#location:hover {
+    color: rgb(35, 34, 34);
+}
+
+#search {
+    width: 70%;
+}
+
+#button-addon2 {
+    background-color: #ffa53b;
+    color: #ffffff;
+    border: none;
+}
+
+li i {
+    padding: 0 1vw;
+}
+
+.btn-success {
+    background-color: #16987f;
+    border: none;
+}
+
+.form-select {
+    border: none;
+}
+
+.card-img-top {
+    height: 9rem;
+}
+
+.text-green {
+    color: #16987f;
+}
+
+#category-menu {
+    width: 25%;
+}
+
+#cardsDiv,
+#text-container {
+    width: 100%;
+    margin-left: 15%;
+
+}
+
+#btn-expires {
+    float: right;
+    margin-bottom: 15%;
+}
+
+.card {
+    width: 15rem;
+    height: 23rem;
+}
+
+#btn-fav {
+    margin-left: 8rem;
+}
+
+.add {
+    text-align: center;
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
+
+#nut-healthy {
+    margin: 3%;
+}
+
+#daily {
+    margin: 3% 0;
+    padding: 10% 5%;
+    background-image: url(./bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+#nut {
+    margin-bottom: 8%;
+    padding: 10% 5%;
+    background-image: url(./2.jpg);
+    background-size: cover;
+    border-radius: 15px;
+}
+
+#healthy {
+    padding: 10% 5%;
+    background-image: url(./3.jpg);
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.text-grey {
+    color: rgb(88, 87, 87);
+}
+
+#eggs {
+    padding: 2%;
+    background-image: url(./4.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin-right: 3%;
+}
+
+#fruits {
+    padding: 2%;
+    background-image: url(./5.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin: 0 3%;
+}
+
+#meat {
+    padding: 2%;
+    background-image: url(./6.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin-left: 3%;
+}
+
+.text {
+    background-color: rgba(255, 255, 255, 0.46);
+    border-radius: 15px;
+
+}
+
+.cart {
+    padding: 1%;
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+#cardsCart {
+    width: 90%;
+    margin: auto;
+}
+
+.quantity-cart {
+    width: 7rem;
+}
+
+#remove {
+    cursor: pointer;
+}
+
+#buy-now {
+    margin-left: 2%;
+}
+
+
+.form-group {
+    width: 100%;
+}
+
+#anadirAdmin {
+    width: 40%;
+}
+
+.botones {
+    width: 30%;
+}
+
+#btn-enviar {
+    width: 40%;
+    margin: 5% 30%;
+}
+
+#editAdmin {
+    width: 40%;
+}
+
+#btn-modificar {
+    width: 40%;
+    margin: 5% 30%;
+}
+
+#mostrarCompra {
+    width: 90%;
+    margin: auto;
+}
+
+#btnCompras {
+    margin: 30%
+}
+
+
+@media screen and (max-width: 575px) {
+    #navbar1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #navbarSupportedContent {
+        display: flex;
+    }
+
+    li i {
+        padding: 0 2vw;
+    }
+
+}
