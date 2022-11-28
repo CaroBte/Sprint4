@@ -17,103 +17,102 @@
 </head>
 
 <body>
-
-    <div class="container-fluid btn-success d-flex justify-content-between">
-        <p class="p-top"> Something you love is now on sale! <strong><u>Buy now !</u></strong></p>
-        <p class="p-top"> English <i class="fa-solid fa-flag-usa"></i> USD </p>
-    </div>
-    <nav class="navbar navbar-expand-sm bg-light">
-        <div class="container-fluid">
-            <a id="logo" class="navbar-brand" href="index.html"><img src="./styles/logo.png" height="24px"></a>
-            <div class="navbar-collapse" id="navbarSupportedContent">
-                <form id="search" class="d-flex" role="search">
-                    <button id="location" class="btn"><i class="fa-solid fa-location-dot"></i>
-                    </button>
-                    <div class="input-group">
-                        <input id="searched" type="text" class="form-control" placeholder="I'm searching for..."
-                            aria-label="Recipient's username" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i
-                                class="fa-solid fa-magnifying-glass"></i></button>
-                    </div>
-                </form>
-                <ul id="navbar1" class="navbar-nav me-auto mb-2 mb-lg-0">
+    <div id="navbars">
+        <div class="container-fluid btn-success d-flex justify-content-between">
+            <p class="p-top"> Something you love is now on sale! <strong><u>Buy now !</u></strong></p>
+            <p class="p-top"> English <i class="fa-solid fa-flag-usa"></i> USD </p>
+        </div>
+        <nav class="navbar navbar-expand-sm bg-light">
+            <div class="container-fluid">
+                <a id="logo" class="navbar-brand" href="index.html"><img src="./styles/logo.png" height="24px"></a>
+                <div class="navbar-collapse" id="navbarSupportedContent">
+                    <form id="search" class="d-flex" role="search">
+                        <button id="location" class="btn"><i class="fa-solid fa-location-dot"></i>
+                        </button>
+                        <div class="input-group">
+                            <input id="searched" type="text" class="form-control" placeholder="I'm searching for..."
+                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </form>
+                    <ul id="navbar1" class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html"><i
+                                    class="fa-solid fa-house"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active border-start border-end" aria-current="page"
+                                href="./favoritos.html"><i class="fa-regular fa-heart"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active border-end" aria-current="page" href="./cart.html"><i
+                                    class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./admin.html"><i
+                                    class="fa-regular fa-user"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html"><i
-                                class="fa-solid fa-house"></i></a>
+                        <button type="button" class="btn btn-success"><i class="fa-solid fa-bars-staggered"></i> All
+                            Categories</button>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active border-start border-end" aria-current="page"
-                            href="./favoritos.html"><i class="fa-regular fa-heart"></i></a>
+                        <select class="form-select" aria-label="Floating label select example">
+                            <option selected>Home</option>
+                        </select>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active border-end" aria-current="page" href="./cart.html"><i
-                                class="fa-solid fa-cart-shopping"></i></a>
+                        <select class="form-select" aria-label="Floating label select example">
+                            <option selected>Shop</option>
+                        </select>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./admin.html"><i
-                                class="fa-regular fa-user"></i></a>
+                        <select class="form-select" aria-label="Floating label select example">
+                            <option selected>Product</option>
+                        </select>
+                    </li>
+                    <li class="nav-item">
+                        <select class="form-select" aria-label="Floating label select example">
+                            <option selected>Mega Menu</option>
+                        </select>
+                    </li>
+                    <li class="nav-item">
+                        <select class="form-select" aria-label="Floating label select example">
+                            <option selected>Blog</option>
+                        </select>
+                    </li>
+                    <li class="nav-item">
+                        <select class="form-select" aria-label="Floating label select example">
+                            <option selected>Pages</option>
+                        </select>
+                    </li>
+                    <li class="nav-item">
+                        <select class="form-select" aria-label="Floating label select example">
+                            <option selected>Contact</option>
+                        </select>
                     </li>
                 </ul>
             </div>
-        </div>
-    </nav>
-    <nav class="navbar navbar-expand-lg">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <button type="button" class="btn btn-success"><i class="fa-solid fa-bars-staggered"></i> All
-                        Categories</button>
-                </li>
-                <li class="nav-item">
-                    <select class="form-select" aria-label="Floating label select example">
-                        <option selected>Home</option>
-                    </select>
-                </li>
-                <li class="nav-item">
-                    <select class="form-select" aria-label="Floating label select example">
-                        <option selected>Shop</option>
-                    </select>
-                </li>
-                <li class="nav-item">
-                    <select class="form-select" aria-label="Floating label select example">
-                        <option selected>Product</option>
-                    </select>
-                </li>
-                <li class="nav-item">
-                    <select class="form-select" aria-label="Floating label select example">
-                        <option selected>Mega Menu</option>
-                    </select>
-                </li>
-                <li class="nav-item">
-                    <select class="form-select" aria-label="Floating label select example">
-                        <option selected>Blog</option>
-                    </select>
-                </li>
-                <li class="nav-item">
-                    <select class="form-select" aria-label="Floating label select example">
-                        <option selected>Pages</option>
-                    </select>
-                </li>
-                <li class="nav-item">
-                    <select class="form-select" aria-label="Floating label select example">
-                        <option selected>Contact</option>
-                    </select>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <nav class="navbar d-flex flex-row justify-content-around bg-light">
-        <div class="d-flex flex-column flex-wrap">
-            <p id="cart-nav" class="navbar-brand">Manager <i class="fa-regular fa-user"></i></p>
-            <p class="navbar-brand">Products</p>
-        </div>
-    </nav>
-
+        </nav>
+        <nav class="navbar d-flex flex-row justify-content-around bg-light">
+            <div class="d-flex flex-column flex-wrap">
+                <p id="cart-nav" class="navbar-brand">Manager <i class="fa-regular fa-user"></i></p>
+                <p class="navbar-brand">Products</p>
+            </div>
+        </nav>
+    </div>
     <a data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseShow" href="
     #anadirAdmin" class="btn btn-outline-success botones mt-4 mb-4"> Add products</a>
     <div id="anadirAdmin" class="collapse">
@@ -158,7 +157,6 @@
                 <button id="btn-modificar" class="btn btn-info">Send</button>
         </section>
     </div>
-
     <nav class="navbar d-flex flex-row justify-content-around bg-light mt-0">
         <div class="d-flex flex-column flex-wrap">
             <p class="navbar-brand">Purchase History</p>
@@ -183,7 +181,58 @@
             </table>
         </section>
     </div>
-
+    <footer id="footer" class="bg-light d-flex flex-row flex-wrap justify-content-between p-5">
+        <div class="d-flex flex-column flex-wrap">
+            <a class="navbar-brand mb-4" href="#navbars"><img src="./styles/logo.png" width="120px"></a>
+            <p class="text-grey">In publishing and graphic <br>
+                design. Lorem ipsum is a <br>
+                placeholder text commonly <br>
+                used to demonstrate the visual form.</p>
+            <p class="text-grey"><i class="fa-solid fa-house"></i> 1418 Riverwood Drive, CA 96052. US</p>
+            <p class="text-grey"><i class="fa-regular fa-envelope"></i> support@fastkart.com</p>
+        </div>
+        <div class="d-flex flex-column flex-wrap">
+            <h5 class="mb-4">Categories</h5>
+            <p class="text-grey">Vegetables & Fruit</p>
+            <p class="text-grey">Beverages</p>
+            <p class="text-grey">Meats & Seafood</p>
+            <p class="text-grey">Breakfast & Dairy</p>
+            <p class="text-grey">Frozen Foods</p>
+            <p class="text-grey">Biscuits & Snacks</p>
+            <p class="text-grey">Grocery & Staples</p>
+            <p class="text-grey">Wines & Alcohol Drinks</p>
+        </div>
+        <div class="d-flex flex-column flex-wrap">
+            <h5 class="mb-4">Useful Links</h5>
+            <p class="text-grey">Home</p>
+            <p class="text-grey">Shop</p>
+            <p class="text-grey">About US</p>
+            <p class="text-grey">Blog</p>
+            <p class="text-grey">Contact Us</p>
+        </div>
+        <div class="d-flex flex-column flex-wrap">
+            <h5 class="mb-4">Help Center</h5>
+            <p class="text-grey">Your Order</p>
+            <p class="text-grey">Your Account</p>
+            <p class="text-grey">Track Order</p>
+            <p class="text-grey">Your Wishlist</p>
+            <p class="text-grey">Search</p>
+            <p class="text-grey">FAQ</p>
+        </div>
+        <div class="d-flex flex-column flex-wrap">
+            <h5 class="mb-4">Contact Us</h5>
+            <div>
+                <p class="text-grey"><i class="fa-solid fa-phone-flip"></i> Hotline 24/7:</p>
+                <p class="text-grey"><strong>+91 888 104 2340</strong></p>
+            </div>
+            <hr>
+            <div>
+                <p class="text-grey"><i class="fa-regular fa-envelope"></i> Email Address:</p>
+                <p class="text-grey"><strong>fastkart@hotmail.com</strong></p>
+            </div>
+            <hr>
+        </div>
+    </footer>
 
 </body>
 <script defer src="./api.js"></script>
